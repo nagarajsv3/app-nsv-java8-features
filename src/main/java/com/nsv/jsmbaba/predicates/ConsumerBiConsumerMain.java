@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-public class CustomerMain {
+public class ConsumerBiConsumerMain {
 
     public static void main(String[] args) {
         Customer naga = new Customer("naga","newark");
