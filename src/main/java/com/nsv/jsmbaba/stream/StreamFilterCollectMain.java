@@ -48,7 +48,11 @@ public class StreamFilterCollectMain {
             System.out.println(customer);
         }));
 
-
+        System.out.println("********customer - naga*********");
+        List<Customer> customersmatchingnaga = customerList.stream().filter((customer -> { if (customer.getName().equalsIgnoreCase("dhoni")) return true; else return false;})).collect(Collectors.toList());
+        customersmatchingnaga.forEach((custNaga)-> {
+            System.out.println(custNaga);
+        });
 
     }
 }
